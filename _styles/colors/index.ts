@@ -1,6 +1,13 @@
-/** 중첩 객체가 될 경우 deepFreeze 구현해서 적용 */
-const COLOR = Object.freeze({
-  BACKGROUND: "#f5f5f7",
-});
+const LIGHT = {
+  body: "rgb(245 245 245 / 100%)",
+  text: "#333",
+  toggleBorder: "#FFF",
+};
 
-export default COLOR;
+const DARK = {
+  body: "rgb(0 0 0 / 100%)",
+  text: "#FFF",
+  toggleBorder: "#6B8096",
+};
+
+export { LIGHT, DARK };

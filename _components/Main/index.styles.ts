@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import COLOR from "@/_styles/colors";
 
 const Main = styled.main`
-  background: ${COLOR.BACKGROUND};
+  background: ${({ theme }) => theme.body};
   height: 100vh;
+  transition: background 0.3s;
 `;
 
 export default { Main };

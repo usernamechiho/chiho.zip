@@ -1,6 +1,7 @@
 import Main from "@/_components/Main";
 import StyledComponentsRegistry from "./lib/registry";
 import "./reset.css";
+import { cookies } from "next/headers";
 
 export const metadata = {
   title: "Chiho.zip",
@@ -12,11 +13,13 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const theme = cookies().get("theme")?.value || "light";
+
   return (
     <html>
       <body>
         <StyledComponentsRegistry>
-          <Main>{children}</Main>
+          <Main theme={theme}>{children}</Main>
         </StyledComponentsRegistry>
       </body>
     </html>
