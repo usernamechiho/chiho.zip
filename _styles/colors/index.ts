@@ -1,13 +1,11 @@
 const LIGHT = {
-  body: "rgb(245 245 245 / 100%)",
-  text: "#333",
-  toggleBorder: "#FFF",
+  background: "#FFFFFF",
+  divider: "#11111126",
 };
 
 const DARK = {
-  body: "rgb(0 0 0 / 100%)",
-  text: "#FFF",
-  toggleBorder: "#6B8096",
+  background: "#000000",
+  divider: "#ffffff26",
 };
 
 export { LIGHT, DARK };
