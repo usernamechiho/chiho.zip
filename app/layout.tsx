@@ -1,11 +1,9 @@
-import Main from "@/_components/Main";
-import StyledComponentsRegistry from "./lib/registry";
 import "./reset.css";
 import { cookies } from "next/headers";
 
 export const metadata = {
   title: "Chiho.zip",
-  description: "Digital Garden for Chiho",
+  description: "...",
 };
 
 export default function RootLayout({
@@ -17,11 +15,7 @@ export default function RootLayout({
 
   return (
     <html>
-      <body>
-        <StyledComponentsRegistry>
-          <Main theme={theme}>{children}</Main>
-        </StyledComponentsRegistry>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

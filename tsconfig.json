@@ -24,6 +24,6 @@
   "compiler": {
     "styledComponents": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "_components/Main/index.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "_components/Layout/index.tsx"],
   "exclude": ["node_modules"]
 }

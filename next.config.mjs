@@ -1,4 +1,16 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {};
+import createMDX from "@next/mdx";
 
-export default nextConfig;
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
+
+  webpack5: true,
+  webpack: (config) => {
+    config.resolve.fallback = { fs: false };
+    return config;
+  },
+};
+
+const withMDX = createMDX({});
+
+export default withMDX(nextConfig);

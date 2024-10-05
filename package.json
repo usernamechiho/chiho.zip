@@ -9,12 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "jotai": "^2.9.3",
+    "@mdx-js/loader": "^3.0.1",
+    "@mdx-js/react": "^3.0.1",
+    "@next/mdx": "^14.2.14",
+    "@types/mdx": "^2.0.13",
+    "gray-matter": "^4.0.3",
     "lucide-react": "^0.438.0",
     "next": "14.2.5",
     "react": "^18",
-    "react-dom": "^18",
-    "styled-components": "^6.1.12"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "@types/node": "^20",
