@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-size: var(--font-m);
+  line-height: var(--font-m-height);
+  font-weight: var(--font-bold);
+}
+
+.intro {
+  font-size: var(--font-lg);
+  line-height: var(--font-lg-height);
+  font-weight: var(--font-bold);
+}

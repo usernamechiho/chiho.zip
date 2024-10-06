@@ -1,4 +1,4 @@
-import { getPosts } from "@/_utils/post";
+import { getPosts } from "@/app/_utils/post";
 import Link from "next/link";
 
 export default async function Posts() {
