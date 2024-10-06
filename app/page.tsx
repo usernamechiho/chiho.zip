@@ -14,6 +14,8 @@ export default function Home() {
     setIsMounted(true);
   }, []);
 
+  console.log("hi");
+
   return (
     <div className={styles.container}>
       <h1
