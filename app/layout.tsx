@@ -1,13 +1,5 @@
 import { ThemeProvider } from "next-themes";
-import styles from "./layout.module.scss";
-import "./reset.css";
-
-import localFont from "next/font/local";
-
-const font = localFont({
-  src: "../public/fonts/NotoSerifKR-VariableFont_wght.ttf",
-  display: "swap",
-});
+import "./global.css";
 
 export default function RootLayout({
   children,
@@ -15,12 +7,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html suppressHydrationWarning>
-      <body className={styles.body}>
+    <html>
+      <body>
         <ThemeProvider>
-          <header className={styles.header} />
+          <header />
 
-          <main className={`${styles.main} ${font.className}`}>{children}</main>
+          <main>{children}</main>
         </ThemeProvider>
       </body>
     </html>

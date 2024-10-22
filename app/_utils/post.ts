@@ -24,3 +24,9 @@ export const getPosts = cache(async (): Promise<Post[]> => {
     (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
   );
 });
+
+export async function getPost(slug: string) {
+  const posts = await getPosts();
+
+  return posts.find((post) => post?.slug === slug);
+}
